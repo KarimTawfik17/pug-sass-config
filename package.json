@@ -1,18 +1,24 @@
 {
-  "name": "ableton",
+  "name": "pug - sass config",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "concurrently 'npm:pug' 'npm:sass'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pug": "pug src --out=dist --watch",
     "sass": "sass src:dist --watch"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "pug",
+    "sass",
+    "scss"
+  ],
+  "author": "Karim Tawfik",
   "license": "ISC",
   "devDependencies": {
     "@prettier/plugin-pug": "^1.19.0",
+    "concurrently": "^6.5.1",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.45.1"
