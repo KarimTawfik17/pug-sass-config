@@ -1,0 +1,17 @@
+- var mainNavItems = ["Live", "Push", "Link", "Shop", "Packs", "Help"];
+- var secNavItems = ["Try Live for free", "Log in or register"];
+header 
+  ul
+    .left-nav
+      li 
+        img(src="./logo.svg", alt="Main page")
+      - for (let navitem of mainNavItems )
+        li= navitem
+
+      button.show-btn(type="button")
+        | More
+        span.show
+        span.hide
+    .right-nav 
+      - for (let navitem of secNavItems )
+        li= navitem
